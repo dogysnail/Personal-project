@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <style>
+        body {
+    background-image: url("https://www.tripsavvy.com/thmb/KPnYhtdWif5p4tMi81q9J5tnd4A=/3936x2214/smart/filters:no_upscale()/dubai-skyline-1070127800-852cfa4a466b45bca771797b32ed4bd6.jpg");
+}
+    </style>
+
+
+
+    <div id="box">
+
+        <a href="./start.html">
+            <img id="ish-logo" src="./assets/ish-logo (1).png" alt="Logo">
+        </a>
+
+       
+        <h1 id="log-in">Sign Up</h1>
+
+
+            <input class="text-input" id="userField" type="text" placeholder="Username" name="user_name"><br><br>
+            <input class="text-input" id="userPass" type="password" placeholder="Password" name="password"><br><br>
+            <input class="text-input" id="IDField" type="text" placeholder="School ID"> <br><br>
+            <input class="text-input" id="userEmail" type="email" placeholder="Email" name="email_id"><br><br>
+
+            <button onclick="signUp()" id="button">Sign Up</button>
+
+
+        <p>Have a account?</p>
+        <a id="sign-up-link"href="./login.html">Log in here!</a>
+    </div>
+
+
+        <script src="signup.js"></script>
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/8.6.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/8.6.1/firebase-auth.js"></script>
+  <script src="/__/firebase/8.6.1/firebase-firestore.js"></script>
+
+
+<script>
+
+
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVcsHTzEW83f_N4BvoLvHY_NlwY1HQpIg",
+    authDomain: "ish-dashboard.firebaseapp.com",
+    projectId: "ish-dashboard",
+    storageBucket: "ish-dashboard.appspot.com",
+    messagingSenderId: "859576605594",
+    appId: "1:859576605594:web:188da4f917d45ae2f5b823"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+</body>
+</html>
