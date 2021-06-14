@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Home</title>
 </head>
-<body>
+<body id="body-element">
     
 <div id="login_div" class="loggedin-div">
-  <style>
-    body {
-background-image: url("https://www.tripsavvy.com/thmb/KPnYhtdWif5p4tMi81q9J5tnd4A=/3936x2214/smart/filters:no_upscale()/dubai-skyline-1070127800-852cfa4a466b45bca771797b32ed4bd6.jpg");
-}
-</style>
+
 
 
 <div id="box">
@@ -51,7 +47,9 @@ background-image: url("https://www.tripsavvy.com/thmb/KPnYhtdWif5p4tMi81q9J5tnd4
 
     <p id="navbar-login username-text"></p>
 
-    <a id="navbar-login"href="./about.html">About</a>
+    <a class="navbar-login"href="./about.html">About</a>
+    <a href="./start.html" class="navbar-login">Home</a>
+    <button id="username-text" class="navbar-button" onclick="settings()">eeeeee</button>
 
 
 
@@ -59,9 +57,21 @@ background-image: url("https://www.tripsavvy.com/thmb/KPnYhtdWif5p4tMi81q9J5tnd4
 </div>
 
 <h1>This is the Dashboard Page</h1><br><br>
-<p id="user-para"></p>
-<button id="" onclick="logout()">Log Out</button>
+<p id="username-text"></p>
 
+
+<button id="button" onclick="logout()">Log Out</button>
+
+
+</div>
+
+<div id="settings_div" >
+  
+  <div class="box2">
+
+    <button onclick="settings()">leave settings</button>
+
+  </div>
 
 </div>
 
@@ -69,9 +79,7 @@ background-image: url("https://www.tripsavvy.com/thmb/KPnYhtdWif5p4tMi81q9J5tnd4
 
 
 
-
-
-<div class="scirpts">
+<div class="scripts">
   <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
 
@@ -99,6 +107,8 @@ background-image: url("https://www.tripsavvy.com/thmb/KPnYhtdWif5p4tMi81q9J5tnd4
 
 
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
 
 <script src="./Javascript/dashboard.js"></script>
 
